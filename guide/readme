@@ -1,0 +1,34 @@
+# Guide
+
+the main script is "riscv2binary.sh", the file "getbin.exe" is used by the script so both need to be in the same folder.
+
+exampel of set-up:
+
+pwd/test_folder:
+
+getbin.exe   riscv2binary.sh   codeinriscv 
+
+when using the script use the following line:
+
+./riscv2binary.sh codeinriscv output
+
+and output should look like:
+
+intruction_memory[0] = 32b' ...
+intruction_memory[1] = 32b' ...
+intruction_memory[2] = 32b' ...
+intruction_memory[3] = 32b' ...
+
+etc.
+
+supported riscv commands are :
+
+add
+addi
+sub
+mul
+div
+lw
+sub
+
+rest are not supported.
