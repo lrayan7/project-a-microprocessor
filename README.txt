@@ -94,14 +94,6 @@ assign context_switch = context_switch & context_switch_from_prediction_module;
 
 Written by:
 
-   Mohammed Dallasheh      |   mohamed.r.d@gmail.com
-   Rayan Labay             |   labay123ryan@gmail.com
-
-Supervisors:
-   
-   Eric Herbelin           |   ericherbelin@ee.technion.ac.il
-   Kunal Korgaonkar        |   kkorgaon@eng.ucsd.edu
-
-Technion, ASIC2 Lab
+me and another student, under "Technion, ASIC2 Lab" supervisiors.
 
 
