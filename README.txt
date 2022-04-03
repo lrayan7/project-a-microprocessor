@@ -95,5 +95,6 @@ assign context_switch = context_switch & context_switch_from_prediction_module;
 Written by:
 
 me and another student, under "Technion, ASIC2 Lab" supervisiors.
+more info at: https://github.com/nmtproject/Near-Memory-Threading
 
 
