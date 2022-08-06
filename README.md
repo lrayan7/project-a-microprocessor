@@ -48,6 +48,6 @@ its a very simple predictor, just in the case of CPU-read issue a context switch
 Written by:
 
 me and another student, under "Technion, ASIC2 Lab" supervisiors.
-more info at: https://github.com/nmtproject/Near-Memory-Threading
+more info at: `https://github.com/nmtproject/Near-Memory-Threading`
 
 
