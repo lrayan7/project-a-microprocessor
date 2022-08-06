@@ -8,17 +8,17 @@ this is a traditional pipline, more accurately as the top level shown in the boo
 the machine code supported is RISC-V (32bit).
 
 
-# short guide of how to use this design
+## short guide of how to use this design
 
 this entire project was made using simulator Modelsim Free Edition so better use it at first.
 
 
-# Threading 
+## Threading 
 threading in this design is not as the regular threading that is known, a thread starts running and then when a context switch happens it will be swapped entirely, meaning 
-all the dataflow inside the pipeline will be switched as a whole.
+all the dataflow inside the pipeline will be switched as a whole. thread = "pipeline state"
 
-visual example:
-
+### visual example:
+```
 ---------------------------------------------------------------------------------------------------------------------
 lest assume this is the state of the dataflow (snapshot) : 
 
@@ -34,14 +34,14 @@ IF        |    ID     |     EX    |    MEM    |  WB                         slot
                                                                             slot4: ... 
                                                                             
 ---------------------------------------------------------------------------------------------------------------------
-
-# Context Switch
+```
+## Context Switch
 context switch happens when the main CPU (this the MemoryController module) and the NMT device will try to access the same location in the main memory (assumed in the design as the same byte - can be made broader in future like a "bank" or a "row").
 in this case we give the CPU the priority and put the commands on the fly of the current thread inside the MPR.
 and output the next in line commands from it and continue it (or start a new one).
 
 
-# predictor used in the desing is called "Next Rank Predictor"
+## predictor used in the desing is called "Next Rank Predictor"
 
 its a very simple predictor, just in the case of CPU-read issue a context switch.
 
